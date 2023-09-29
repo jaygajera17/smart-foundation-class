@@ -20,7 +20,8 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
   max-width: 100%;
 }
 .centered h1 {
@@ -38,7 +39,7 @@ body {
 
 /* Highlighted text style */
 .highlight-text {
-    background-color: #F8C01B;
+    background-color: #35d9eb;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -319,3 +320,35 @@ main {
     }
   }
   
+
+
+
+
+
+  .navbar {
+    background-color: #f3f3f0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: rgb(1, 1, 1);
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #3690eb; /* Change color on hover (orange) */
+}
+
+/* Style sections */
