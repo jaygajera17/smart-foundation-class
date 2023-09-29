@@ -2,7 +2,6 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: linear-gradient(135deg, #4f9cdb, #9b6ecd);
      background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -39,7 +38,7 @@ body {
 
 /* Highlighted text style */
 .highlight-text {
-    background-color: #461293;
+    background-color: #F8C01B;
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -56,7 +55,6 @@ body {
   min-width: 150px; /* Minimum width for the circular image */
   min-height: 150px; /* Minimum height for the circular image */
   border-radius: 50%;
-  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -110,6 +108,7 @@ body {
     width: 100%; 
     overflow: hidden; 
     padding-top: 100%; /* 1:1 Aspect Ratio */ 
+    background-color: #f3f3f0; 
     } 
     
   .responsive-iframe { 
@@ -126,9 +125,10 @@ body {
 
 
 #about {
-    width: 100%;
+    
     background-color: #f3f3f0;
-    height: 100%;
+    margin-left: 10px;
+    padding : 20px 0;
 }
 
 #about table {
@@ -141,9 +141,16 @@ body {
 #about td {
     height: auto;
     padding: 10px;
-    
-
 }
+.container-about {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 
 .heading {
     text-align: center;
@@ -151,12 +158,24 @@ body {
     font-size: 24px;
     padding: 15px;
 }
+.section-heading h2 {
+  font-size: 24px;
+  color: #f3971b;
+  margin: 0 15px;
+  display: inline-block;
+}
 
 .hr-line {
-    width: 70px;
-    background-color: #f3971b;
-    height: 2px;
-    margin: 0 auto;
+  flex-grow: 1;
+  background-color: #f3971b;
+  height: 2px;
+  margin-left: 10px; /* Add some margin to separate the line from text */
+  margin-right: 10px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
@@ -170,13 +189,18 @@ body {
 
 .content img {
     max-width: 50%;
-    max-height: 100% ;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 .content-text {
     color: #000000;
     font-size: 20px;
     margin-left: 20px;
+}
+.content-text h2 {
+  margin: 0 0 15px;
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
@@ -214,7 +238,6 @@ main {
     box-sizing: border-box;
     padding: 30px;
     width: 100%;
-    max-width: 1150px;
     background-color: #fff;
     margin: 0 auto;
     margin-top: 50px;
