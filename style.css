@@ -173,7 +173,7 @@ body {
     position: relative; 
     width: 100%; 
     min-height: 500px; 
-    overflow: auto; 
+    overflow: hidden; 
     padding-top: 100%; /* 1:1 Aspect Ratio */ 
     background-color: #35d9eb; 
     } 
