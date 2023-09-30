@@ -382,3 +382,16 @@ main {
     }
   }
   
+
+
+  /************** Footer ****************/
+
+ 
+  .footer-links a {
+    text-decoration: none; /* Remove underline */
+    color: #333; /* Change link color to dark gray */
+}
+/* Add CSS styles for the icons */
+.footer-links i {
+    margin-right: 5px; /* Add some space between icon and text */
+}
