@@ -5,6 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smart Foundation Class</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap" rel="stylesheet">
+
   <link rel="icon" href="icon.jpg" type="image/x-icon" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
@@ -44,19 +49,19 @@
     <div class="container">
       <ul class="navbar-nav d-flex flex-row">
         <li class="nav-item">
-          <a class="nav-link" href="#home"><i class="fas fa-home"></i> Home</a>
+          <a class="nav-link menu__link" href="#home"><i class="fas fa-home"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> About</a>
+          <a class="nav-link menu__link" href="#about"><i class="fas fa-info-circle"></i> About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#courses"><i class="fas fa-book"></i> Demo</a>
+          <a class="nav-link menu__link" href="#courses"><i class="fas fa-book"></i> Demo</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#FAQ"><i class="fas fa-question-circle"></i> FAQ</a>
+          <a class="nav-link menu__link" href="#FAQ"><i class="fas fa-question-circle"></i> FAQ</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#contact"><i class="fas fa-user-plus"></i> Register </a>
+          <a class="nav-link menu__link" href="#contact"><i class="fas fa-user-plus"></i> Register </a>
         </li>
       </ul>
     </div>
@@ -125,7 +130,7 @@
   <section id="about">
     <div class="section-heading">
       <span class="hr-line"></span>
-      <h2 style="color: blue;"> About us </h2>
+      <h2 style="color: #0C356A; letter-spacing: 4px;"> About Us </h2>
       <span class="hr-line"></span>
     </div>
 
@@ -166,7 +171,7 @@
 
       <div class="section-heading">
         <span class="hr-line"></span>
-        <h2 style="color: blue;"> DEMO Course </h2>
+        <h2 style="color: #0C356A; letter-spacing: 4px;"> Demo Courses </h2>
         <span class="hr-line"></span>
       </div>
 
@@ -215,7 +220,7 @@
       <center>
         <div class="section-heading">
           <span class="hr-line"></span>
-          <h2 style="color: blue;"> Frequently Asked Questions </h2>
+          <h2 style="color: #0C356A; letter-spacing: 4px;"> Frequently Asked Questions</h2>
           <span class="hr-line"></span>
       </center>
       </div>
@@ -280,10 +285,10 @@
       <div class="hidden-section">
         <div class="section-heading">
           <span class="hr-line"></span>
-          <h2 style="color: blue;"> Register Now </h2>
+          <h2 style="color: #0C356A; letter-spacing: 4px;"> Register Now </h2>
           <span class="hr-line"></span>
         </div>
-        <div class="g-form-container">
+        <div class="g-form-container" style="margin-top: 10px;">
 
           <iframe class="responsive-iframe"
             src="https://docs.google.com/forms/d/e/1FAIpQLSe86_6iVjEkvR0PX4CDVoKGdAM5AkN8Ol2Qu6KKyHq1ppfMPw/viewform?embedded=true">Loading…</iframe>
@@ -296,7 +301,7 @@
 
 
   <!-- -----------------------Footer -------------------------------->
-
+  <!-- 
   <footer class="page-footer font-small blue pt-4">
     <div class="container-fluid text-center text-md-left">
       <div class="row">
@@ -339,13 +344,71 @@
       </div>
     </div>
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2023 Copyright:
+  <!-- <div class="footer-copyright text-center py-3">© 2023 Copyright:
       <!-- <a href="/">Created by ...</a> -->
+  <!-- </div> -->
+
+  <!-- </footer> -->
+
+  <!-- Footer -->
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      <h3>સ્માર્ટ ફાઉન્ડેશન <span>ક્લાસ</span></h3>
+
+      <p class="footer-links">
+        <a href="#home" class="link-1">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#courses">Courses</a>
+
+        <a href="#FAQ">FAQ</a>
+      </p>
+
+      <p class="footer-company-name" style="color: white;">© 2023 Copyright:</p>
+    </div>
+
+    <div class="footer-center">
+
+      <div style="margin-left: 5px; margin-bottom: 5px;">
+        <p>CALL US</p>
+      </div>
+
+      <div>
+        <i class="fa fa-phone" style="font-size: 0.98em;"></i>
+        <p><a href="tel:9925122154" style="text-decoration: none;">Bhesan: 9925122154</a></p>
+
+      </div>
+      <div><i class="fa fa-phone" style="font-size: 0.98em;"></i>
+        <p><a href="tel:9512940844" style="text-decoration: none;">Visavadar: 9512940844</a></p>
+      </div>
+
+      <div> <i class="fa fa-phone" style="font-size: 0.98em;"></i>
+        <p><a href="tel:9512940844" style="text-decoration: none;">Junagadh: 9979438744</a></p>
+      </div>
+
+
+    </div>
+
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>CONTACT US</span>
+        <i class="fa fa-envelope"></i>
+        <a href="mailto:bharatbhaibhaliya63@gmail.com" style="text-decoration: none; color: lightseagreen; font-size: 15px;">bharatbhaibhaliya63@gmail.com</a>
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/+919512940844" style="text-decoration: none; color: lightseagreen; font-size: 15px;">WhatsApp</a>
+      </p>
+  
+
+    </div>
+
     </div>
 
   </footer>
-
-  <!-- Footer -->
 
 
 
