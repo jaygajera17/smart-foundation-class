@@ -172,7 +172,8 @@ body {
 .g-form-container {    
     position: relative; 
     width: 100%; 
-    overflow: hidden; 
+    min-height: 500px; 
+    overflow: auto; 
     padding-top: 100%; /* 1:1 Aspect Ratio */ 
     background-color: #35d9eb; 
     } 
