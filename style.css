@@ -6,11 +6,47 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+
+
+
+/***************** Navbar *******************/
+
+
+.navbar {
+  background-color: #f3f3f0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: rgb(1, 1, 1);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #3690eb; 
+}
+
+
+
+
+/********************************* Home page **************************************/
 .content-wrapper {
   display: flex;
-  flex-direction: row; /* Arrange items horizontally */
-  align-items: center; /* Vertically center items */
-  justify-content: space-between; /* Space between items */
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: space-between; 
 }
 
 /* Styles for the centered content */
@@ -25,14 +61,14 @@ body {
   max-width: 100%;
 }
 .centered h1 {
-  font-size: 2.5rem; /* Adjust the font size as needed */
+  font-size: 2.5rem; 
   margin: 10px 0;
   text-align: justify;
 }
 
 /* Update paragraph style */
 .centered p {
-  font-size: 1.1rem; /* Adjust the font size as needed */
+  font-size: 1.1rem;
   text-align: justify;
   margin-bottom: 10px 0;
 }
@@ -53,8 +89,8 @@ body {
 .round-image {
   width: 125px;
   height: 125px;
-  min-width: 150px; /* Minimum width for the circular image */
-  min-height: 150px; /* Minimum height for the circular image */
+  min-width: 150px; 
+  min-height: 150px; 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -79,7 +115,7 @@ body {
       font-size: 1.5rem; /* Adjust the font size for smaller screens */
   }
   .centered p {
-      font-size: 0.9rem; /* Adjust the font size for smaller screens */
+      font-size: 0.9rem; 
   }
   .content-wrapper {
     flex-direction: row;
@@ -93,17 +129,11 @@ body {
     display: none;
     padding: 20px;
 }
-.about {
-    width: 100%;
-    margin-top: 50px;
-    margin-left: 35px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 
-}
 
+
+
+/**************************** google form responsive ****************************/
 .g-form-container {    
     position: relative; 
     width: 100%; 
@@ -123,7 +153,18 @@ body {
     } 
 
 
+/**************************** About***************************/
 
+.about {
+  width: 100%;
+  margin-top: 50px;
+  margin-left: 35px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
 
 #about {
     
@@ -215,6 +256,8 @@ body {
     }
 }
 
+
+/**************************** Course ************************/
 
 .pdf-container {
     position: relative;
@@ -320,35 +363,3 @@ main {
     }
   }
   
-
-
-
-
-
-  .navbar {
-    background-color: #f3f3f0;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.navbar ul {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar li {
-    margin: 0 15px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: rgb(1, 1, 1);
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.navbar a:hover {
-    color: #3690eb; /* Change color on hover (orange) */
-}
-
-/* Style sections */
