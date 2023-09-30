@@ -13,7 +13,7 @@ body {
 
 
 .navbar {
-  background-color: #f3f3f0;
+  background-color: #ffffff;
   text-align: center;
   padding: 20px 0;
 }
@@ -34,8 +34,21 @@ body {
   transition: color 0.3s ease;
 }
 
-.navbar a:hover {
-  color: #3690eb; 
+
+
+
+.navbar-nav .nav-link {
+  font-size: 13px;
+  font-weight: bold;
+  color:#000000;
+}
+.navbar-nav .nav-link.active {
+  color: #35d9eb;
+}
+
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover {
+  color: #f3971b; /* Change the color when hovered or focused */
 }
 
 
@@ -110,6 +123,28 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.section-heading h2 {
+  font-size: 20px;
+  color: #f3971b;
+  margin: 0 15px;
+  display: inline-block;
+}
+
+.hr-line {
+  flex-grow: 1;
+  background-color: #f3971b;
+  height: 2px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.section-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
 @media (max-width: 768px) {
   .centered h1 {
       font-size: 1.5rem; /* Adjust the font size for smaller screens */
@@ -139,7 +174,7 @@ body {
     width: 100%; 
     overflow: hidden; 
     padding-top: 100%; /* 1:1 Aspect Ratio */ 
-    background-color: #f3f3f0; 
+    background-color: #35d9eb; 
     } 
     
   .responsive-iframe { 
@@ -151,6 +186,7 @@ body {
     height: 100%; 
     border: none; 
     } 
+
 
 
 /**************************** About***************************/
@@ -168,7 +204,7 @@ body {
 
 #about {
     
-    background-color: #f3f3f0;
+    background-color: #35d9eb;
     margin-left: 10px;
     padding : 20px 0;
 }
@@ -200,25 +236,7 @@ body {
     font-size: 24px;
     padding: 15px;
 }
-.section-heading h2 {
-  font-size: 24px;
-  color: #f3971b;
-  margin: 0 15px;
-  display: inline-block;
-}
 
-.hr-line {
-  flex-grow: 1;
-  background-color: #f3971b;
-  height: 2px;
-  margin-left: 10px; /* Add some margin to separate the line from text */
-  margin-right: 10px;
-}
-.section-heading {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .content {
     display: flex;
@@ -274,7 +292,7 @@ body {
 }
 
 
-
+/****************** FAQ *******************/
 
 main {
     display: block;
@@ -282,7 +300,7 @@ main {
     box-sizing: border-box;
     padding: 30px;
     width: 100%;
-    background-color: #fff;
+    background-color: #35d9eb;
     margin: 0 auto;
     margin-top: 50px;
   }
@@ -291,7 +309,7 @@ main {
     padding: 20px;
     padding-top: 0px;
     padding-bottom: 0px;
-    border-bottom: solid 1px #ebebeb;
+    border-bottom: solid 2px #35d9eb;
   }
   .open {
     cursor: pointer;
@@ -302,7 +320,7 @@ main {
     opacity: 0.7;
   }
   .expanded {
-    background-color: #f5f5f5;
+    background-color: #35d9eb;
     transition: all 0.3s ease-in-out;
   }
   .question {
@@ -335,8 +353,8 @@ main {
     width: 10px;
     height: 10px;
     background: transparent;
-    border-left: 2px solid #ccc;
-    border-bottom: 2px solid #ccc;
+    border-left: 2px solid #f3971b;
+    border-bottom: 2px solid #f3971b;
     transition: all 0.3s ease-in-out;
   }
   .faq-o {
