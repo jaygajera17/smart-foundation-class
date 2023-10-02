@@ -19,7 +19,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
-  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <script>$(document).ready(function () {
+    // Initialize Bootstrap Collapse
+    $('.collapse').collapse();
+  });
+  </script>
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></scrip> -->
 
   <!-- Google tag (gtag.js) ----->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7JZW21KEPP"></script>
@@ -35,10 +40,7 @@
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script>
-    $(document).ready(function () {
-      // Initialize Bootstrap Collapse
-      $('.collapse').collapse();
-    });
+    
   </script>
 </head>
 
@@ -86,7 +88,7 @@
 
               <div class="section-heading">
                 <span class="hr-line"></span>
-                <h2 style="color: #1D267D;">સ્માર્ટ ફાઉન્ડેશન ક્લાસ </h2>
+                <h2 class="typing-text" style="color: #1D267D;">સ્માર્ટ ફાઉન્ડેશન ક્લાસ </h2>
                 <span class="hr-line"></span>
               </div>
             </h1>
@@ -128,10 +130,10 @@
 
 
   <!----------------------------------ABOUT SECTION ----------------------------->
-  <section id="about">
+  <section id="about" class="scroll-section">
     <div class="section-heading">
       <span class="hr-line"></span>
-      <h2 style="color: #35155D; letter-spacing: 4px;"> About Us </h2>
+      <h2  style="color: #35155D; letter-spacing: 4px;"> About Us </h2>
       <span class="hr-line"></span>
     </div>
 
@@ -169,7 +171,7 @@
   <!------------------------------ Courses Section ----------------------------->
   <div class="hidden-section">
 
-    <section id="courses" class="py-5" style="background-color: #35d9eb;">
+    <section id="courses" class="scroll-section py-5" style="background-color: #35d9eb;">
 
       <div class="section-heading">
         <span class="hr-line"></span>
@@ -217,7 +219,7 @@
 
 
   <!-----------------------  FAQ SECTION  --------------------------->
-  <section id="FAQ">
+  <section id="FAQ" class="scroll-section">
     <main class="py-5">
       <center>
         <div class="section-heading">
@@ -282,7 +284,7 @@
 
 
   <!-------------------------------------- Contact Section ----------------------------------->
-  <section id="contact">
+  <section id="contact" class="scroll-section">
     <main class="py-1">
       <div class="hidden-section-contact">
         <div class="section-heading">
@@ -300,59 +302,7 @@
   </section>
 
 
-
-
-  <!-- -----------------------Footer -------------------------------->
-  <!-- 
-  <footer class="page-footer font-small blue pt-4">
-    <div class="container-fluid text-center text-md-left">
-      <div class="row">
-        <div class="col-md-6 mt-md-0 mt-3">
-          <h5 class="text-uppercase">Smart Foundation Class</h5>
-          <p>reachout us in case of any query</p>
-        </div>
-        <hr class="clearfix w-100 d-md-none pb-3">
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h5 class="text-uppercase">Call US</h5>
-          <ul class="list-unstyled">
-            <li>
-              <i class="fas fa-phone"></i>
-              <a href="tel:9925122154">Bhesan: 9925122154</a>
-            </li>
-            <li>
-              <i class="fas fa-phone"></i>
-              <a href="tel:9512940844">Visavadar: 9512940844</a>
-            </li>
-            <li>
-              <i class="fas fa-phone"></i>
-              <a href="tel:9512940844">Junagadh: 9979438744</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 mb-md-0 mb-3">
-          <h5 class="text-uppercase">Contact US</h5>
-          <ul class="list-unstyled">
-            <li>
-              <i class="far fa-envelope"></i>
-              <a href="mailto:bharatbhaibhaliya63@gmail.com">bharatbhaibhaliya63@gmail.com</a>
-            </li>
-            <li>
-              <i class="fab fa-whatsapp"></i>
-              <a href="https://wa.me/+919512940844">WhatsApp</a>
-            </li>
-
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- Copyright -->
-  <!-- <div class="footer-copyright text-center py-3">© 2023 Copyright:
-      <!-- <a href="/">Created by ...</a> -->
-  <!-- </div> -->
-
-  <!-- </footer> -->
-
-  <!-- Footer -->
+<!-----------------------------------FOOTER--------------------------------->
 
   <footer class="footer-distributed">
 
@@ -425,63 +375,84 @@
 
 
 <script>
+  
   AOS.init();
-  // Function to show hidden sections when scrolling
-  window.addEventListener('scroll', function () {
-    const hiddenSections = document.querySelectorAll('.hidden-section');
-    for (let section of hiddenSections) {
-      const rect = section.getBoundingClientRect();
-      if (rect.top <= window.innerHeight * 0.8) {
-        section.style.display = 'block';
+
+// Function to show hidden sections when scrolling
+window.addEventListener('scroll', function () {
+  const hiddenSections = document.querySelectorAll('.hidden-section');
+  for (let section of hiddenSections) {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= window.innerHeight * 0.8) {
+      section.style.display = 'block';
+    }
+  }
+});
+
+
+$(".open").click(function () {
+  var container = $(this).parents(".topic");
+  var answer = container.find(".answer");
+  var trigger = container.find(".faq-t");
+
+  answer.slideToggle(200);
+
+  if (trigger.hasClass("faq-o")) {
+    trigger.removeClass("faq-o");
+  } else {
+    trigger.addClass("faq-o");
+  }
+
+  if (container.hasClass("expanded")) {
+    container.removeClass("expanded");
+  } else {
+    container.addClass("expanded");
+  }
+});
+
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const typingText = document.querySelector(".typing-text");
+  const textContent = typingText.textContent;
+  typingText.textContent = ""; // Clear the content
+
+  // Function to animate typing
+  function typeWriter(text, i) {
+      if (i < text.length) {
+          typingText.textContent += text.charAt(i);
+          setTimeout(function () {
+              typeWriter(text, i + 1);
+          }, 100); // Adjust the typing speed (milliseconds)
       }
-    }
-  });
-
-
-  $(".open").click(function () {
-    var container = $(this).parents(".topic");
-    var answer = container.find(".answer");
-    var trigger = container.find(".faq-t");
-
-    answer.slideToggle(200);
-
-    if (trigger.hasClass("faq-o")) {
-      trigger.removeClass("faq-o");
-    } else {
-      trigger.addClass("faq-o");
-    }
-
-    if (container.hasClass("expanded")) {
-      container.removeClass("expanded");
-    } else {
-      container.addClass("expanded");
-    }
-  });
-
-  let mybutton = document.getElementById("btn-back-to-top");
-
-  // When the user scrolls down 20px from the top of the document, show the button
-  window.onscroll = function () {
-    scrollFunction();
-  };
-
-  function scrollFunction() {
-    if (
-      document.body.scrollTop > 20 ||
-      document.documentElement.scrollTop > 20
-    ) {
-      mybutton.style.display = "block";
-    } else {
-      mybutton.style.display = "none";
-    }
   }
-  // When the user clicks on the button, scroll to the top of the document
-  mybutton.addEventListener("click", backToTop);
 
-  function backToTop() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-  }
+  // Start the typing animation
+  typeWriter(textContent, 0);
+});
 
 </script>
 

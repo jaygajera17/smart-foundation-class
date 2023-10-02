@@ -639,3 +639,29 @@ main {
 	}
 
 }
+
+
+.typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative; /* Relative positioning for cursor */
+}
+
+.typing-text::before {
+  content: "";
+ /* Cursor style */
+  position: absolute;
+  top: 0;
+  left: 0; /* Position cursor at the start */
+  height: 100%;
+  animation: blink-caret 0.5s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to {
+      border-color: transparent;
+  }
+  50% {
+      border-color: #000;
+  }
+}
